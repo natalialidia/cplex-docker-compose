@@ -1,0 +1,8 @@
+services:
+  cplex:
+    container_name: cplex
+    image: cplex:22.1.1
+    working_dir: /home/cplex
+    volumes:
+    - .:/home/cplex
+    command: /bin/bash
