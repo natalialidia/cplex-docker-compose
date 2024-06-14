@@ -6,19 +6,23 @@
 
 - Steps to create and execute your own model:
 
-  1. Run the container (edit the docker-compose.yml cplex image version if needed):
+  - Run the container (edit the docker-compose.yml cplex image version if needed):
     ```
-    docker compose run cplex
+      docker compose run cplex
     ```
-  2. Create your cpp program in the same folder of the Makefile and docker-compose.yml
-  3. Edit the Makefile, replacing the "lpmodel" with the name of your cpp program
-  4. Compile and execute your program in the container bash:
+    
+  - Create your .cpp program in the same folder of the Makefile and docker-compose.yml
+    
+  - Edit the Makefile, replacing the "lpmodel" with the name of your cpp program
+    
+  - Compile and execute your program in the container bash:
     ```
-    make execute
+      make execute
     ```
-  5. (Optional) Remove all those files produced by the compile (but not necessary recompile if you need to)
+    
+  - (Optional) Remove all those files produced by the compile (but not necessary recompile) if you need to
     ```
-    make clean
+      make clean
     ```
 
 - To execute de lpmodel.cpp example, just run the container (as in step 1) and use the `make execute` command in the container bash.
